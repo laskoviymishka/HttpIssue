@@ -38,7 +38,7 @@ namespace ConsoleApplication1
 			using (var client = new HttpClient())
 			{
 				var payload = new StringContent(test, Encoding.UTF8, "application/json");
-				var response = await client.PostAsync("http://localhost:5000", payload);
+				var response = await client.PostAsync("http://localhost:5000/api/values", payload);
 			}
 
 			sw.Stop();

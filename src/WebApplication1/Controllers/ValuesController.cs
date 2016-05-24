@@ -18,6 +18,7 @@ namespace WebApplication1.Controllers
 		[HttpPost]
 		public void Post([FromBody]Contract value)
 		{
+			Console.WriteLine($"[WE INSIDE API] with value bar={value?.Bar} and foo={value?.Foo}");
 		}
 	}
 }
