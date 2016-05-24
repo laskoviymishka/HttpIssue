@@ -11,7 +11,7 @@ namespace ConsoleApp1
 	class Program
 	{
 		private static string test =
-			@"{""moduleName"":""C:\\Users\\Andrei_Tserakhau\\AppData\\Local\\Temp\\tmp42BD.tmp"",""exportedFunctionName"":""renderToString"",""args"":[""C:\\dev\\Source\\Repos\\NodeServices\\templates\\Angular2Spa"",{""moduleName"":""ClientApp/boot-server"",""exportName"":null,""webpackConfig"":""webpack.config.js""},""http://localhost:5000/counter"",""/counter""]}";
+			@"{""foo"":""dafgdsfgsdfg"",""bar"":""fddfsafdsf""}";
 		public static void Main(string[] args)
 		{
 			Stopwatch sw = new Stopwatch();
@@ -37,7 +37,7 @@ namespace ConsoleApp1
 			using (var client = new HttpClient())
 			{
 				var payload = new StringContent(test, Encoding.UTF8, "application/json");
-				var response = await client.PostAsync("http://localhost:50202", payload);
+				var response = await client.PostAsync("http://localhost:5000", payload);
 			}
 
 			sw.Stop();
