@@ -25,7 +25,7 @@ namespace ConsoleApp1
 
 			sw.Stop();
 
-			Console.WriteLine("Total Elapsed={0} ms", sw.Elapsed.Milliseconds);
+			Console.WriteLine("Total Elapsed={0} ms", sw.Elapsed.TotalMilliseconds);
 			Console.Read();
 		}
 
@@ -42,7 +42,7 @@ namespace ConsoleApp1
 
 			sw.Stop();
 
-			Console.WriteLine("Elapsed={0} ms", sw.Elapsed.Milliseconds);
+			Console.WriteLine("Elapsed={0} ms", sw.Elapsed.TotalMilliseconds);
 		}
 	}
 }
