@@ -18,7 +18,6 @@ namespace ConsoleApp2
 		public static void Main(string[] args)
 		{
 			Stopwatch sw = new Stopwatch();
-			Console.ReadKey();
 			sw.Start();
 
 			for (int i = 0; i < 20; i++)
